@@ -18,8 +18,12 @@ body{
     
 }
 
+#new-task {
+    width: 200px;
+}
+
 .card {
-    margin: 0 25%;
+    margin: 0 30%;
     height: 400px;
     background: rgba(211, 211, 211, 0.95);
     border-radius: 2em;
@@ -28,4 +32,14 @@ body{
 
 li {
     list-style: none;
+    padding-right: 40px;
+    margin: 10px 0;
+}
+
+.delete {
+    margin: 0 10px;
+}
+
+.done {
+    margin: 0 10px;
 }
