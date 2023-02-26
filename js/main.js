@@ -1,10 +1,12 @@
 function inputToList() {
     let ul = document.getElementById('tasks') // List variable
-    let input = document.getElementById('new-task').value; // input value
+    let input_field = document.getElementById('new-task'); // Input field variable
+    input = input_field.value; // Get value of input field
 
     // Checks if input is empty
     if (input == ""){
         alert("Please enter a task!");
+        input_field.focus();
     }
     else {
         let new_li = document.createElement('li'); // Create new list item
@@ -32,17 +34,15 @@ function inputToList() {
 
         // Add event listener for "Delete" button
         delete_button.addEventListener("click", function() {
-            let item = this.parentNode; // List item variable
+            let item = this.parentNode; // Get list item variable
             let list = item.parentNode; // List variable
             list.removeChild(item);
-
         })
 
         // Reset input
-        let current = document.getElementById("new-task");
-        if (current.value != "")
-            current.value = "";
-        current.focus();
+        if (input_field.value != "")
+            input_field.value = "";
+        input_field.focus();
         }
     
     
