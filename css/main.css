@@ -22,7 +22,12 @@ body{
     width: 200px;
 }
 
+#add-btn {
+    
+}
+
 .card {
+    font-family: 'Shantell Sans', cursive;
     margin: 0 30%;
     height: 400px;
     background: rgba(211, 211, 211, 0.95);
@@ -42,4 +47,9 @@ li {
 
 .done {
     margin: 0 10px;
+}
+
+.btn-img  {
+    width: 20px;
+    height: 20px;
 }
