@@ -1,6 +1,6 @@
 function inputToList() {
-    let ul = document.getElementById('tasks') // List variable
-    let input_field = document.getElementById('new-task'); // Input field variable
+    let ul = document.querySelector('#tasks') // List variable
+    let input_field = document.querySelector('#new-task'); // Input field variable
     input = input_field.value; // Get value of input field
 
     // Checks if input is empty
@@ -52,8 +52,8 @@ function inputToList() {
     }
 }
 
-let add_button = document.getElementById('add-btn');
-let input_field = document.getElementById('new-task');
+let add_button = document.querySelector('#add-btn');
+let input_field = document.querySelector('#new-task');
 
 add_button.addEventListener("click", inputToList); // Create event listener for add_button click
 
