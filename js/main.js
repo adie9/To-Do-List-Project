@@ -49,9 +49,18 @@ function inputToList() {
         if (input_field.value != "")
             input_field.value = "";
         input_field.focus();
-        }
-    
-    
-
-    
+    }
 }
+
+let add_button = document.getElementById('add-btn');
+let input_field = document.getElementById('new-task');
+
+add_button.addEventListener("click", inputToList); // Create event listener for add_button click
+
+// Allows pressing "Enter" key to click add_button while in input field
+input_field.addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
+        event.preventDefault();
+        add_button.click();
+    }
+})
