@@ -21,10 +21,10 @@ body{
 
 #new-task {
     width: 200px;
-}
-
-#add-btn {
-    
+    margin-top: 12px;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding: 4px;
 }
 
 .card {
