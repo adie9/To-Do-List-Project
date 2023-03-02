@@ -15,7 +15,7 @@ function inputToList() {
         // Create "Done" Button
         let done_button = document.createElement('button');
         let done_image = document.createElement('img'); // Create element for button icon
-        done_image.src = "../images/done.png";
+        done_image.src = "./images/done.png";
         done_image.classList.add('btn-img');
         done_button.appendChild(done_image); // Add icon to button
         done_button.classList.add('done');
@@ -24,7 +24,7 @@ function inputToList() {
         // Create "Delete" Button
         let delete_button = document.createElement('button');
         let del_image = document.createElement('img'); // Create element for button icon
-        del_image.src = "../images/delete.png";
+        del_image.src = "./images/delete.png";
         del_image.classList.add('btn-img');
         delete_button.appendChild(del_image); // Add icon to button
         delete_button.classList.add('delete');
