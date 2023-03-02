@@ -21,6 +21,7 @@ body{
 
 #new-task {
     width: 200px;
+
     margin-top: 12px;
     border-radius: 15px;
     border: solid 2px black;
@@ -29,6 +30,11 @@ body{
 
 .card {
     font-family: 'Shantell Sans', cursive;
+=======
+}
+
+.card {
+
     margin: 0 30%;
     height: 400px;
     background: rgba(211, 211, 211, 0.95);
@@ -51,7 +57,10 @@ li {
     margin: 0 10px;
 }
 
+
 .btn-img  {
     width: 20px;
     height: 20px;
 }
+=======
+
