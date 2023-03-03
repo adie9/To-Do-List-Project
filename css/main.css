@@ -7,8 +7,6 @@ body{
     background-image: url(../images/paper.avif);
     background-size: auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
@@ -29,8 +27,9 @@ body{
 
 .card {
     font-family: 'Shantell Sans', cursive;
-    margin: 0 30%;
+    margin: 0 auto;
     height: 400px;
+    width: 40%;
     background: rgba(211, 211, 211, 0.95);
     border-radius: 2em;
     border: 1px solid black;
@@ -52,6 +51,15 @@ li {
 }
 
 .btn-img  {
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1em;
+}
+
+@media screen and (max-width: 599px) {
+    .card {
+        width: 90vw;
+        height: 70vw;
+        font-size: 0.5em;
+        
+    }
 }
